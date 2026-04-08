@@ -208,6 +208,7 @@ p  { font-size: 1rem; line-height: 1.72; color: var(--text-mid); }
   align-items: center;
   gap: .15rem;
 }
+.nav-private-mobile { display: none; }
 
 .nav-links li { position: relative; }
 
@@ -1047,6 +1048,7 @@ body.loaded .hero-actions {
 
   .services-grid    { grid-template-columns: 1fr; max-width: 640px; margin: 0 auto; }
   .pillars-grid     { grid-template-columns: repeat(2,1fr); }
+
   .detail-grid      { grid-template-columns: 1fr; gap: 3rem; }
   /* For reversed grids (.detail-grid-reverse), content comes first in DOM already */
   .detail-img-wrap img { height: 380px; }
@@ -1066,6 +1068,8 @@ body.loaded .hero-actions {
 
 @media (max-width: 768px) {
   :root { --section-py: 3.5rem; --nav-h: 68px; }
+
+  .pillars-grid { grid-template-columns: 1fr; }
 
   /* Mobile nav */
   .nav-links, .nav-cta { display: none; }
@@ -1089,11 +1093,16 @@ body.loaded .hero-actions {
     color: rgba(255,255,255,.82);
     font-size: .88rem;
   }
-  .nav-cta.is-open {
+  .nav-links.is-open .nav-private-mobile {
     display: block;
-    margin: 1.5rem 0 0;
-    text-align: center;
-    padding: .85rem;
+    border-top: 1px solid rgba(200,169,106,.25);
+    margin-top: .5rem;
+    padding-top: .5rem;
+  }
+  .nav-link--private {
+    color: var(--champagne) !important;
+    font-weight: 600;
+    letter-spacing: .1em;
   }
 
   .hero-content h1 { font-size: 2.6rem; }
