@@ -255,7 +255,7 @@
           <div class="insight-img"
                style="background-image:url('${img}')"
                role="img" aria-label="${category}">
-            <span class="insight-cat">${category}</span>
+            <!--<span class="insight-cat">${category}</span>-->
           </div>
         </a>
         <div class="insight-body">
