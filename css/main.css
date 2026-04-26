@@ -366,8 +366,7 @@ p  { font-size: 1rem; line-height: 1.72; color: var(--text-mid); }
   margin-bottom: 1.5rem;
   line-height: 1.08;
 }
-.hero-content h1 em {
-  font-style: italic;
+.hero-content h1 span {
   color: var(--champagne-light);
 }
 
